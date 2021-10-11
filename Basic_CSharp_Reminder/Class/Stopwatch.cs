@@ -6,7 +6,7 @@ namespace Basic_CSharp_Reminder.Class
     {
         private DateTime _startTime;
         private DateTime _endTime;
-        public Boolean IsStarted { get; set; }
+        private Boolean IsStarted { get; set; }
 
         //public DateTime StartTime
         //{
