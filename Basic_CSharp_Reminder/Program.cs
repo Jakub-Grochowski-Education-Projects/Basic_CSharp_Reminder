@@ -8,6 +8,11 @@ namespace Basic_CSharp_Reminder
     {
         static void Main(string[] args)
         {
+            FirstExercise();
+        }
+
+        public static void FirstExercise()
+        {
             Stopwatch stopwatch = new Stopwatch();
             try
             {
@@ -19,7 +24,7 @@ namespace Basic_CSharp_Reminder
                 Console.WriteLine(e.Message);
                 Console.WriteLine();
             }
-            var t= Task.Run(async delegate
+            var t = Task.Run(async delegate
             {
                 await Task.Delay(2000);
                 return 42;
