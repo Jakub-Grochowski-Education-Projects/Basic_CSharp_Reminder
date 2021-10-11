@@ -8,7 +8,35 @@ namespace Basic_CSharp_Reminder
     {
         static void Main(string[] args)
         {
-            FirstExercise();
+            //FirstExercise();
+            Post post = new Post("Jak w c# policzyc czas w sekundach", "Cześć! Zastanawiam się jak policzyć czas w sekundach w c# bo używając Datetime Now i odejmując różnice dostaje całą date. Pozdrawiam losowy uzytkownik");
+
+            Console.WriteLine(post.ToString());
+
+            for (int i = 0; i < 4; i++)
+            {
+                post.UpVote();
+            }
+
+            Console.WriteLine(post.ToString());
+
+            for(int i = 0; i < 10; i++)
+            {
+                post.DownVote();
+            }
+            Console.WriteLine(post.ToString());
+
+            for (int i = 0; i < 85; i++)
+            {
+                post.UpVote();
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                post.DownVote();
+            }
+            Console.WriteLine(post.ToString());
+
+
         }
 
         public static void FirstExercise()
