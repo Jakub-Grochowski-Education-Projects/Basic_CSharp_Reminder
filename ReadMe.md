@@ -2,9 +2,9 @@
 First training was for Class and encapsulation here are 2 Exercises from Udemy Toutorial(Source)
 
 ## Table of Contents
+* [Exercise](#Exercise)
 * [Technologies & Tools Used](#technologies-&-tools-used)
 * [Sources](#sources)
-* [Exercise](#Exercise)
 
 ## Exercise
 #### First
