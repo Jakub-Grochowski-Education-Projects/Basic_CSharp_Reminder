@@ -44,6 +44,7 @@ namespace Basic_CSharp_Reminder
         public static void FirstExercise()
         {
             Stopwatch stopwatch = new Stopwatch();
+            for(int i = 0; i < 2; i++) { 
             try
             {
                 stopwatch.Start();
@@ -71,7 +72,9 @@ namespace Basic_CSharp_Reminder
                 Console.WriteLine();
             }
             stopwatch.Stop();
+                Console.WriteLine("Press any button to turn on it again or finish program if u alredy try it 2 times");
             Console.ReadLine();
+            }
         }
     }
 }
