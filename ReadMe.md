@@ -1,4 +1,4 @@
-##Encapsulation Training
+## Encapsulation Training
 First training was for Class and encapsulation here are 2 Exercises from Udemy Toutorial(Source)
 
 ## Table of Contents
@@ -17,7 +17,7 @@ First training was for Class and encapsulation here are 2 Exercises from Udemy T
  We should not be able to start a stopwatch twice in a row (because that may overwrite the initial
  start time). So the class should throw an InvalidOperationException if its started twice.
 #### Second
-###### Design a class called Post. This class models a StackOverflow post. It should have properties
+Design a class called Post. This class models a StackOverflow post. It should have properties
 for title, description and the date/time it was created. We should be able to up-vote or down-vote
 a post. We should also be able to see the current vote value. In the main method, create a post,
 up-vote and down-vote it a few times and then display the the current vote value.
