@@ -3,7 +3,7 @@ First training was for Class and encapsulation here are 2 Exercises from Udemy T
 
 ## Table of Contents
 * [Exercise](#Exercise)
-* [Technologies & Tools Used](#Technologies-&-Tools-Used)
+* [Technologies & Tools Used](#Technologies & Tools Used)
 * [Sources](#Sources)
 
 ## Exercise
@@ -32,5 +32,5 @@ state and hide its implementation detail.
 - .Net Framework 5.0
 - Visual Studio 2019
 
-## Source
+## Sources
 udemy.com/course/csharp-intermediate-classes-interfaces-and-oop  - Section 2
