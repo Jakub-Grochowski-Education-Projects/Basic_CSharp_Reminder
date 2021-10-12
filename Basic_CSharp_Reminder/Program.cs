@@ -10,7 +10,13 @@ namespace Basic_CSharp_Reminder
         {
             //FirstExercise();
 
-            //SecondExercise
+            //PostExercise();
+
+
+
+
+        }
+        public static void PostExercise() {
             Post post = new Post("Jak w c# policzyc czas w sekundach", "Cześć! Zastanawiam się jak policzyć czas w sekundach w c# bo używając Datetime Now i odejmując różnice dostaje całą date. Pozdrawiam losowy uzytkownik");
 
             Console.WriteLine(post.ToString());
@@ -22,7 +28,7 @@ namespace Basic_CSharp_Reminder
 
             Console.WriteLine(post.ToString());
 
-            for(int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 post.DownVote();
             }
@@ -37,10 +43,7 @@ namespace Basic_CSharp_Reminder
                 post.DownVote();
             }
             Console.WriteLine(post.ToString());
-
-
         }
-
         public static void FirstExercise()
         {
             Stopwatch stopwatch = new Stopwatch();
