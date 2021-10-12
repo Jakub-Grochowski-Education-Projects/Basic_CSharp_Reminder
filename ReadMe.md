@@ -3,7 +3,7 @@ First training was for Class and encapsulation here are 2 Exercises from Udemy T
 
 ## Table of Contents
 * [Exercise](#Exercise)
-* [Technologies & Tools Used](#Technologies-&-Tools-Used)
+* [Technologies & Tools Used](#Technologies-and-Tools-Used)
 * [Sources](#Sources)
 
 ## Exercise
@@ -27,7 +27,7 @@ because otherwise, you may accidentally change the votes of a class to 0 or to a
 number. And this is how we create bugs in our programs. The class should always protect its
 state and hide its implementation detail.
 
-## Technologies & Tools Used
+## Technologies and Tools Used
 - C#
 - .Net Framework 5.0
 - Visual Studio 2019
