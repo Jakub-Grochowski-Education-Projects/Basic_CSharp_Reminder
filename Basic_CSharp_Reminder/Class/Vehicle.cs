@@ -11,7 +11,11 @@ namespace Basic_CSharp_Reminder.Class
         private Engine engine;
         public readonly string _vehicleBrand;
         private int _vehicleWeight;
-
+        private int _maxSpeed;
+        public int MaxSpeed
+        {
+            get { return _maxSpeed; }
+        }
         public int VehicleWeight
         {
             get { return _vehicleWeight; }
@@ -22,8 +26,8 @@ namespace Basic_CSharp_Reminder.Class
         {
             get { return engine; }
             set { if (value != null) engine = value;
-                engine.CalculateMaxSpeed(VehicleWeight + engine.Weight);
-                }
+           
+            }
         }
 
         public Vehicle(Engine engine, string vehicleBrand, int vehicleWeight)
@@ -31,14 +35,14 @@ namespace Basic_CSharp_Reminder.Class
             Engine = engine;
             _vehicleBrand = vehicleBrand;
             VehicleWeight = vehicleWeight;
-            Engine.CalculateMaxSpeed(VehicleWeight + Engine.Weight);
+            CalculateMaxSpeed();
         }
 
         public void Move()
         {
             Console.WriteLine("I am geting to {0}",_vehicleBrand);
             engine.TurnOn();
-            Console.WriteLine("I am driving with {0} max speed",Engine.MaxSpeed);
+            Console.WriteLine("I am driving with {0} max speed",_maxSpeed);
         }
 
         public void Stop()
@@ -47,13 +51,19 @@ namespace Basic_CSharp_Reminder.Class
             Engine.TurnOff();
             Console.WriteLine("I Leave my Vehicle");
         }
+        private void CalculateMaxSpeed()
+        {
+             _maxSpeed = (Engine.NumberOfHorseMechanical * 4) - (int)((VehicleWeight+Engine.Weight) / 4.5);
+            if (_maxSpeed > 2.2 * Engine.NumberOfHorseMechanical) _maxSpeed = (int)(2.2 * Engine.NumberOfHorseMechanical);
+        }
+
     }
     class Engine
     {
         public readonly string _name;
         private int _numerOfHorseMechanical;
         private int _weight;
-        private int _maxSpeed;
+       
 
 
         public int Weight
@@ -67,10 +77,7 @@ namespace Basic_CSharp_Reminder.Class
             get { return _numerOfHorseMechanical; }
             set { _numerOfHorseMechanical = value; }
         }
-        public int MaxSpeed
-        {
-            get { return _maxSpeed; }
-        }
+        
 
         private Engine(string name)
         {
@@ -94,11 +101,6 @@ namespace Basic_CSharp_Reminder.Class
         {
             Console.WriteLine("Engine just stop wroking");
         }
-        public void CalculateMaxSpeed(int carWeight)
-        {
-            if (carWeight > 0)_maxSpeed = (_numerOfHorseMechanical * 4) - (carWeight/9);
-            if (_maxSpeed > 3 * _numerOfHorseMechanical) _maxSpeed = 3 * _numerOfHorseMechanical;
-        }
-
+     
     }
 }

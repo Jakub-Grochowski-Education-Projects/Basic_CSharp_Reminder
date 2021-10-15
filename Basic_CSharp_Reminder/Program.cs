@@ -12,6 +12,10 @@ namespace Basic_CSharp_Reminder
 
             //PostExercise();
 
+            Engine engine = new Engine("silnik benzynowy", 150, 120);
+            Vehicle vehicle = new Vehicle(engine, "Volvo", 1020);
+            vehicle.Move();
+            vehicle.Stop();
 
 
 
