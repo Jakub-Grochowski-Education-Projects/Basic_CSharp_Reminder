@@ -12,13 +12,17 @@ namespace Basic_CSharp_Reminder
 
             //PostExercise();
 
+           //VehicleExercise();
+
+
+
+        }
+        public static void VehicleExercise()
+        {
             Engine engine = new Engine("silnik benzynowy", 150, 120);
             Vehicle vehicle = new Vehicle(engine, "Volvo", 1020);
             vehicle.Move();
             vehicle.Stop();
-
-
-
         }
         public static void PostExercise() {
             Post post = new Post("Jak w c# policzyc czas w sekundach", "Cześć! Zastanawiam się jak policzyć czas w sekundach w c# bo używając Datetime Now i odejmując różnice dostaje całą date. Pozdrawiam losowy uzytkownik");
